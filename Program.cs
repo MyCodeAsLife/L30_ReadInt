@@ -10,12 +10,12 @@ namespace L30_ReadInt
     {
         static void Main(string[] args)
         {
-            int userNumber = NumberRequest();
+            int userNumber = GetNumber();
 
             Console.WriteLine($"\nПользователь ввел число: {userNumber}");
         }
 
-        static int NumberRequest()
+        static int GetNumber()
         {
             int number = 0;
             bool correctAction = false;
