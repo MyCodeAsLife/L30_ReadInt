@@ -18,13 +18,13 @@ namespace L30_ReadInt
         static int GetNumber()
         {
             int number = 0;
-            bool correctAction = false;
+            bool isCorrectAction = false;
 
-            while (correctAction == false)
+            while (isCorrectAction == false)
             {
                 Console.Clear();
                 Console.Write("Введите число: ");
-                correctAction = int.TryParse(Console.ReadLine(), out number);
+                isCorrectAction = int.TryParse(Console.ReadLine(), out number);
             }
 
             return number;
